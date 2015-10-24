@@ -1,14 +1,11 @@
 package in.buzzzz.activity;
 
-import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 import in.buzzzz.R;
 import in.buzzzz.fragment.DetailFragment;
-import in.buzzzz.fragment.HomeFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -19,11 +16,10 @@ public class MainActivity extends BaseActivity {
         loadHomeFragment();
     }
 
-
-    public void loadHomeFragment(){
-        FragmentManager fragmentManager = getFragmentManager();
+    public void loadHomeFragment() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.fragment_container_main,new DetailFragment());
+        transaction.add(R.id.fragment_container_main, new DetailFragment());
         transaction.commit();
     }
 }

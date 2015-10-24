@@ -1,6 +1,5 @@
 package in.buzzzz.activity;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -13,14 +12,14 @@ import in.buzzzz.fragment.TopMenuFragment;
 /**
  * Created by ekansh on 23/10/15.
  */
-public class BaseActivity extends Activity {
+public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.add(R.id.fragment_top_menu, new TopMenuFragment());
-        transaction.add(R.id.fragment_menu_bottom,new BottomMenuFragment());
+        transaction.add(R.id.fragment_menu_bottom, new BottomMenuFragment());
         transaction.commit();
     }
 }
