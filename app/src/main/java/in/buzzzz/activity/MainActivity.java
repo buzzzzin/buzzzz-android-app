@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import in.buzzzz.R;
+import in.buzzzz.fragment.DetailFragment;
 import in.buzzzz.fragment.HomeFragment;
 
 public class MainActivity extends BaseActivity {
@@ -22,7 +23,7 @@ public class MainActivity extends BaseActivity {
     public void loadHomeFragment(){
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.fragment_container_main,new HomeFragment());
+        transaction.add(R.id.fragment_container_main,new DetailFragment());
         transaction.commit();
     }
 }
