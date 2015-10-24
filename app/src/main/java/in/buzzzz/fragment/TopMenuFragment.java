@@ -2,7 +2,9 @@ package in.buzzzz.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -13,7 +15,7 @@ import in.buzzzz.R;
 /**
  * Created by ekansh on 23/10/15.
  */
-public class TopMenuFragment extends Fragment {
+public class TopMenuFragment extends Fragment{
 
     static boolean topMenuVisible = false;
     private View view;
@@ -28,9 +30,14 @@ public class TopMenuFragment extends Fragment {
         topMenuItems = (ScrollView) view.findViewById(R.id.list_top_menu);
         listViewHeaderListeners();
         listViewItemsListeners();
+        listViewGestureListeners();
         return view;
     }
 
+    private void listViewGestureListeners() {
+//        headerTopMenu.setOnClickListener()
+
+    }
 
     private void listViewItemsListeners(){
         topMenuItems.setOnClickListener(new View.OnClickListener() {
