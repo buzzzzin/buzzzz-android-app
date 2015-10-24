@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
 import in.buzzzz.R;
-import in.buzzzz.fragment.DetailFragment;
+import in.buzzzz.fragment.buzzzz.DetailFragment;
 
 public class MainActivity extends BaseActivity {
 

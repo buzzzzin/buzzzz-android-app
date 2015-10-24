@@ -1,4 +1,4 @@
-package in.buzzzz.fragment;
+package in.buzzzz.fragment.menu;
 
 import android.app.Fragment;
 import android.os.Bundle;

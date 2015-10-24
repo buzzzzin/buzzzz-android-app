@@ -1,4 +1,4 @@
-package in.buzzzz.fragment;
+package in.buzzzz.fragment.buzzzz;
 
 import android.graphics.Point;
 import android.os.Bundle;

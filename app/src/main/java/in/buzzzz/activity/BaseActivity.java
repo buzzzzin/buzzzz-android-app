@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import in.buzzzz.R;
-import in.buzzzz.fragment.BottomMenuFragment;
-import in.buzzzz.fragment.TopMenuFragment;
+import in.buzzzz.fragment.menu.BottomMenuFragment;
+import in.buzzzz.fragment.menu.TopMenuFragment;
 
 /**
  * Created by ekansh on 23/10/15.
