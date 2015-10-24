@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/splash_branding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/splash_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:background="@drawable/logo_white"
+            />
+
+        <TextView
+            android:id="@+id/splash_name"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/app_name"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/splash_image"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/splash_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/splash_api_server"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="api server"
+            android:text="http://"/>
+
+        <EditText
+            android:id="@+id/splash_chat_server"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="chat server"
+            android:text="http://"/>
+        <Button
+            android:id="@+id/splash_enter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enter App"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
