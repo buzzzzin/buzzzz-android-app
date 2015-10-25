@@ -13,21 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:elevation="1dp"
-        android:contentDescription="Do it " />
+        android:contentDescription="Do it "
+        android:elevation="1dp"/>
 
     <FrameLayout
         android:id="@+id/fragment_container_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:animateLayoutChanges="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        >
-
-    </FrameLayout>
-
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_menu_bottom"
+        android:layout_below="@+id/fragment_top_menu"
+        android:animateLayoutChanges="true"/>
 
     <FrameLayout
         android:id="@+id/fragment_menu_bottom"
